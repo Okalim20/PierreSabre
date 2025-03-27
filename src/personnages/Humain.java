@@ -35,11 +35,11 @@ public class Humain {
 		System.out.println( "("+nom+") - "+texte);
 	}
 	
-	private void gagnerArgent(int gain) {
+	protected void gagnerArgent(int gain) {
 		this.setArgent(this.getArgent() + gain);
 	}
 	
-	private void perdreArgent(int gain) {
+	protected void perdreArgent(int gain) {
 		this.setArgent(this.getArgent() - gain);
 	}
 	
