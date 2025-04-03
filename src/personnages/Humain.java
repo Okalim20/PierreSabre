@@ -16,6 +16,10 @@ public class Humain {
 		return nom;
 	}
 
+	public String getBoisson() {
+		return boisson;
+	}
+
 	public int getArgent() {
 		return argent;
 	}
@@ -82,7 +86,7 @@ public class Humain {
 	public void listerConnaissance() {
 		String texte=" ";
 		for (int i = 0; i < nbConnaissance; i++) {
-			texte+=memoire[i].getNom()+" ";
+			texte+=memoire[i].getNom()+", ";
 		}
 		this.parler("Je connais beaucoup de monde dont :"+texte+".");
 		
