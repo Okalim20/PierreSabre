@@ -10,12 +10,16 @@ public class Samourai extends Ronin{
 	
 	@Override
 	public void direBonjour() {
-		this.parler("Bonjour ! Je m'appelle "+this.getNom()+" et j'aime boire du "+this.getBoisson()+".");
-		this.parler("Je suis fier de servir le seigneur "+this.seigneur+".");
+		super.direBonjour();
+		this.parler("Je suis fier de servir le seigneur "+this.getSeigneur()+".");
 	}
 	
 	public void boire(String boisson) {
 		this.parler("Qu'est ce que je vais choisir comme boisson ? Tiens je vais prendre du "+boisson+".");
+	}
+
+	public String getSeigneur() {
+		return seigneur;
 	}
 	
 }

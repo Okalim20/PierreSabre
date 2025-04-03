@@ -37,7 +37,7 @@ public class Yakuza extends Humain {
 	
 	@Override
 	public void direBonjour() {
-		this.parler("Bonjour ! Je m'appelle "+this.getNom()+" et j'aime boire du "+this.getBoisson()+".");
+		super.direBonjour();
 		this.parler("Mon clan est celui de "+this.clan+".");
 	}
 	
