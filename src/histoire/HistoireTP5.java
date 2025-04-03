@@ -3,6 +3,7 @@ package histoire;
 import java.util.Random;
 
 import personnages.Commercant;
+import personnages.GrandMere;
 import personnages.Ronin;
 import personnages.Samourai;
 import personnages.Traitre;
@@ -17,7 +18,6 @@ public class HistoireTP5 {
 		Commercant kumi = new Commercant("Kumi", 10);
 		Yakuza yaku = new Yakuza("Yaku le noir", "whisky", 30, "Warsong");
 		Ronin roro = new Ronin("Roro", "shochu", 60);
-		Random random = new Random();
 		/*
 		marco.faireConnaissance(roro);
 		marco.faireConnaissance(yaku);
@@ -36,7 +36,7 @@ public class HistoireTP5 {
 		*/
 	
 		Traitre masako = new Traitre("Miyamoto", "Masako", "whisky", 100);
-		masako.faireLeGentil();
+		/*masako.faireLeGentil();
 		masako.ranconner(kumi);
 		masako.ranconner(chonin);
 		masako.ranconner(marco);
@@ -45,7 +45,16 @@ public class HistoireTP5 {
 		masako.faireConnaissance(yaku);
 		masako.faireLeGentil();
 		masako.faireConnaissance(roro);
+		*/
 		
+		GrandMere grandMere = new GrandMere("Grand-mère", 10);
+		grandMere.faireConnaissanceAvec(akimoto);
+		grandMere.faireConnaissanceAvec(yaku);
+		grandMere.faireConnaissanceAvec(masako);
+		grandMere.faireConnaissanceAvec(kumi);
+		grandMere.faireConnaissanceAvec(marco);
+		grandMere.faireConnaissanceAvec(chonin);
+		grandMere.ragoter();
 		
 	}
 }

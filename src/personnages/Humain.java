@@ -58,13 +58,13 @@ public class Humain {
 		}
 	}
 	
-	public void faireConnaissance(Humain humain) {
+	public void faireConnaissanceAvec(Humain humain) {
 		this.direBonjour();
 		humain.repondre(this);
 		this.memoriser(humain);
 	}
 	
-	private void memoriser(Humain humain) {
+	protected void memoriser(Humain humain) {
 		if (this.memoire.length==nbConnaissance) {
 			for (int i = 0; i < (memoire.length-1); i++) {
 				this.memoire[i]=this.memoire[i+1];
